@@ -1,6 +1,7 @@
 .Cards {
   display: flex;
   gap: 1.5rem;
+  width: inherit;
 }
 .parentContainer {
   width: 100%;

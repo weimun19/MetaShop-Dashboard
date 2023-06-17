@@ -4,6 +4,12 @@
   flex-direction: column;
   overflow: auto;
   margin: 0 2rem 0 2rem;
+  width: inherit;
+}
+
+.MainDash .tableContainer {
+  padding-top: 2rem;
+  width: inherit;
 }
 
 @media screen and (max-width: 1200px) {

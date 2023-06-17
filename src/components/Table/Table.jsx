@@ -12,7 +12,6 @@ import "./Table.css";
 import Papa from "papaparse";
 import inventory from "../../Data/Inventory.csv";
 
-
 export default function BasicTable() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -53,7 +52,7 @@ export default function BasicTable() {
     fetchData();
   }, []);
   return (
-    <div className="Table">
+    <div className="Table tableContainer">
       <h3>Recent Orders</h3>
       <TableContainer
         component={Paper}
