@@ -62,8 +62,9 @@ const Cards = () => {
             ).toFixed(2),
             value:
               (
-                result.data.filter((d) => d.soldDate === "").length /
-                result.data.length
+                (result.data.filter((d) => d.soldDate === "").length /
+                  result.data.length) *
+                100
               ).toFixed(2) + "%",
             png: UilUsdSquare,
             series: [
@@ -118,8 +119,9 @@ const Cards = () => {
             ).toFixed(2),
             value:
               (
-                result.data.filter((d) => d.soldDate !== "").length /
-                result.data.length
+                (result.data.filter((d) => d.soldDate !== "").length /
+                  result.data.length) *
+                100
               ).toFixed(2) + "%",
             png: UilUsdSquare,
             series: [

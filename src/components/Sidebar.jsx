@@ -2,25 +2,29 @@ import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../imgs/logo.png";
 import { UilBars } from "@iconscout/react-unicons";
-import { UilEstate, UilClipboardAlt } from "@iconscout/react-unicons";
+import {
+  UilEstate,
+  UilPackage,
+  UilClipboardAlt,
+} from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 
 const SidebarData = [
   {
     icon: UilEstate,
-    heading: "Dashboard",
+    heading: "Dashboard (Admin)",
   },
   {
     icon: UilClipboardAlt,
+    heading: "Stock Availability (User)",
+  },
+  {
+    icon: UilPackage,
     heading: "Pending Features...",
   },
 ];
 
-const Sidebar = () => {
-  const [selected, setSelected] = useState(0);
-
-  const [expanded, setExpaned] = useState(true);
-
+const Sidebar = ({ selected, setSelected, expanded, setExpaned }) => {
   const sidebarVariants = {
     true: {
       left: "0",

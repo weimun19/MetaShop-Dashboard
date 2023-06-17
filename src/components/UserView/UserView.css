@@ -1,0 +1,8 @@
+.MainDash {
+  width: inherit;
+}
+
+.MainDash > .tableContainer {
+  padding-top: 2rem;
+  width: inherit;
+}
