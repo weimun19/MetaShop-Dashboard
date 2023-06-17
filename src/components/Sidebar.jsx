@@ -16,7 +16,7 @@ const SidebarData = [
   },
   {
     icon: UilClipboardAlt,
-    heading: "Stock Availability (User)",
+    heading: "Stock Availability (Customer)",
   },
   {
     icon: UilPackage,
