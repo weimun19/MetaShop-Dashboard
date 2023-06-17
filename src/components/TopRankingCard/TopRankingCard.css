@@ -1,0 +1,29 @@
+.ranking {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.individualRank {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.individualRank > h3 {
+  width: 25%;
+}
+
+.individualRank > p {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 75%;
+}
+
+@media screen and (max-width: 1200px) {
+  .ranking {
+    padding: 0 1rem 0 1rem;
+  }
+}
